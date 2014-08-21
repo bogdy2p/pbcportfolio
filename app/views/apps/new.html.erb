@@ -1,0 +1,61 @@
+<div id="centrare">
+<h1>Introdu Aplicatie Noua</h1>
+
+<%= form_for @app do |f| %>
+	<% if @app.errors.any? %>
+	<h2>Errors:</h2>
+	<ul>
+		<% @app.errors.full_messages.each do |message|%>
+		
+		<li><%= message %></li>
+
+		<% end %>	
+	</ul>
+	<% end %>
+
+<p>
+	<%= f.label :title %><br />
+	<%= f.text_field :title %>
+</p>
+<p>
+	<%= f.label :category %><br />
+	<%= f.text_field :category %>
+</p>
+<p>
+	<%= f.label :imagelink %><br />
+	<%= f.text_area :imagelink %>
+</p>
+<p>
+	<%= f.label :imagelink2 %><br />
+	<%= f.text_area :imagelink2 %>
+</p>
+<p>
+	<%= f.label :imagelink3 %><br />
+	<%= f.text_area :imagelink3 %>
+</p>
+<p>
+	<%= f.label :imagelink4 %><br />
+	<%= f.text_area :imagelink4 %>
+</p>
+<p>
+	<%= f.label :imagelink5 %><br />
+	<%= f.text_area :imagelink5 %>
+</p>
+<p>
+	<%= f.label :applicationlink %><br />
+	<%= f.text_area :applicationlink %>
+</p>
+<p>
+	<%= f.label :applicationlink2 %><br />
+	<%= f.text_area :applicationlink2 %>
+</p>
+<p>
+	<%= f.label :description %><br />
+	<%= f.text_area :description %>
+</p>
+	<p>
+		<%= f.submit "Adauga Client"%>
+	</p>
+<% end %>
+
+</div>

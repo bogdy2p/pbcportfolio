@@ -1,0 +1,46 @@
+// Place all the styles related to the web controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+a.wrapper_web {
+	color: white;
+	color: #34495e;
+	float:left;
+	margin-left: 30px;
+	margin-top: 30px;
+	background-color: #2980b9;
+	background-color: #95a5a6;
+	width: 400px;
+	height:300px;
+	border-radius:10px;
+	border: 1px solid #bdc3c7;
+	box-shadow: 5px 5px 5px 5px black;
+	text-decoration: none;
+}
+
+a.wrapper_web h1{
+	color: #d35400;
+}
+
+.container_web{
+	width:80%;
+	margin:0px auto;
+	color: white;
+}
+.container_web h1,h2,h3,h4{
+	color:#f1c40f;
+}
+
+.web_title a{
+	color: #2ecc71;
+	color: #2980b9;
+	font-weight: bolder;
+}
+
+
+.description{
+	width: 60%;
+	margin:0px auto;
+	margin-top:10px;
+	margin-bottom: 10px;
+}

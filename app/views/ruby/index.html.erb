@@ -1,0 +1,17 @@
+<h2 class="bigtitle">Ruby Apps/Scripts Index</h2>
+<div class="container_ruby">
+	<% @apps_ruby.each do |app| %>
+		<a class="wrapper_ruby" href="<%=  ruby_path(app) %>">
+			
+			<h1><%= app.title %></h1>
+		
+			<p><%= app.description.to_s[0..50] + "..." %></p>
+			
+				<div class="icon_container">
+					<img src="assets/rails.jpg" width="100%" height="100%">	
+				</div>
+
+		</a>
+	<% end %>
+</div>
+

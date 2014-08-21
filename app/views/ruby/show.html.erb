@@ -1,0 +1,35 @@
+<div class="container_android">
+
+<h1 class="ruby_title"><%= @app.title %></h1>
+<hr>
+
+<!-- <h3><a href="<%=@app.applicationlink %>">Click for APK Download Link </a> </h3> -->
+<h2> Descriere : </h2>
+<p class="description"><%= @app.description %></p>
+
+	
+
+
+
+
+
+
+<div class="clearer"></div>
+<% if @app.imagelink != ""%>
+<img src="<%= @apps.imagelink%>" width="170" height="300">
+<% end %>
+<% if @app.imagelink2 != ""%>
+<img src="<%= @apps.imagelink2%>" width="170" height="300">
+<% end %>
+<% if @app.imagelink3 != ""%>
+<img src="<%= @apps.imagelink3%>" width="170" height="300">
+<% end %>
+<% if @app.imagelink4 != ""%>
+<img src="<%= @apps.imagelink4%>" width="170" height="300">
+<% end %>
+<% if @app.imagelink5 != ""%>
+<img src="<%= @apps.imagelink5%>" width="170" height="300">
+<% end %>
+
+
+</div>

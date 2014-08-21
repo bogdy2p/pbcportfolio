@@ -1,0 +1,21 @@
+<h2 class="bigtitle">Web Apps Index</h2>
+<div class="container_android">
+	<% @apps_web.each do |app| %>
+		<a class="wrapper_web" href="<%= web_path(app) %>">
+
+			<h1><%= app.title%></h1>
+			
+			<p><%= app.description.to_s[0..50] + "..." %></p>
+			
+				<div class="icon_container">
+					<% if app.applicationlink2 != "" %>
+					<img src="<%= app.applicationlink2 %>" width="100%" height="100%">
+					<% else %>
+					<img src="assets/web.jpg" width="100%" height="100%">	
+					<% end %>
+				</div>
+		</a>
+
+	<% end %>
+	</div>
+

@@ -1,0 +1,31 @@
+
+<div class="container_web">
+
+<h1 class="web_title"><%= @app.title %></h1>
+<hr>
+
+<h3><a href="<%=@app.applicationlink %>">Click to visit the site. </a> </h3>
+<h2> Descriere : </h2>
+<p class="description"><%= @app.description %></p>
+
+<p class="">Previzualizare rapida:</p>
+<iframe src="<%= @app.applicationlink %>" width="1000" height="500"></iframe>
+
+
+
+<!-- <div class="imagini">
+
+	<div class="imagine"></div>
+	<div class="imagine"></div>
+
+</div> -->
+<div class="clearer"></div>
+
+<!-- <p>linkimagine : <%= @app.imagelink %></p>
+<p>linkaplicatie : <%= @app.applicationlink %></p>
+<hr> -->
+<small>Adaugat la: <%= @app.created_at %></small>
+</div>
+
+<!-- 
+<h3> Plus an iframe !!!</h3> -->
